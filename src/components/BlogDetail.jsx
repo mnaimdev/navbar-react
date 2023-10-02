@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom';
 const BlogDetail = () => {
 
     const location = useLocation();
-    console.log(location);
 
     // const {title} = useParams();
 
