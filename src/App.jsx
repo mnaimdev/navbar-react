@@ -1,12 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/Navbar';
 import Blog from './components/Blog';
 import BlogDetail from './components/BlogDetail';
 import Contact from './components/Contact';
-import Error from './components/Error';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
 import User from './components/User';
+import Error from './components/Error';
 
 function App() {
 
@@ -15,8 +14,7 @@ function App() {
     <BrowserRouter>
     <Navbar />
         <Routes>
-            <Route path="/" element={<Home />}>
-            </Route>
+            
 
             <Route path="/blog" element={<Blog />}>
             </Route>
@@ -34,6 +32,8 @@ function App() {
             </Route>
         </Routes>
       </BrowserRouter>
+
+      {/* <Practice /> */}
       
     </>
   )
